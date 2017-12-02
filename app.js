@@ -12,8 +12,8 @@ var index = require('./routes/index');
 var app = express();
 
 const options = {
-    cert: fs.readFileSync('/etc/letsencrypt/live/img.learnindialearn.in/fullchain.pem'),
-    key: fs.readFileSync('/etc/letsencrypt/live/img.learnindialearn.in/privkey.pem')
+    // cert: fs.readFileSync('/etc/letsencrypt/live/img.learnindialearn.in/fullchain.pem'),
+    // key: fs.readFileSync('/etc/letsencrypt/live/img.learnindialearn.in/privkey.pem')
 };
 
 // view engine setup
@@ -50,6 +50,6 @@ app.use(function (err, req, res, next) {
   res.render('error');
 });
 
-https.createServer(options, app).listen(443);
+// https.createServer(options, app).listen(443);
 
 module.exports = app;
