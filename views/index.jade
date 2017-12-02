@@ -3,3 +3,16 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  input#userName(type='text' placeholder="Enter ur name")
+  div#timer
+  div#process(style="color:green;display:none;") Please wait while images are processing 
+  .camera
+    video#video Video stream not available.
+    button#startbutton Take photo
+    button#testPic Identify Pic
+  canvas#canvas
+  .output
+    img#photo(alt='The screen capture will appear in this box.')
+  .pixel
+  
+
